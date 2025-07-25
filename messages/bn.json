@@ -4,8 +4,8 @@
     "description": "আপনি যে পৃষ্ঠাটি খুঁজছেন তা বিদ্যমান নয়।"
   },
   "locale_switcher": {
-    "label": "বাংলা",
-    "locale": "bn"
+    "en": "EN",
+    "bn": "BN"
   },
   "meta_data": {
     "name": "10ms"
