@@ -2,6 +2,30 @@
 // See: https://next-intl.dev/docs/workflows/typescript#messages-arguments
 
 declare const messages: {
+  "products": {
+    "price": "1000",
+    "discounted_price": "200 $ off",
+    "original_price": "1200",
+    "features": {
+      "feature_1": "Total Enrolled: 32995",
+      "feature_2": "Time Required: 50 hours",
+      "feature_3": "54 Videos",
+      "feature_4": "10 Reading & 10 Listening Mocktests",
+      "feature_5": "38 Lecture Sheets",
+      "feature_6": "25 Video Lectures",
+      "feature_7": "1 Free Hardcopy Book Delivered"
+    }
+  },
+  "authentication": {
+    "login": {
+      "title": "Login",
+      "description": "Please enter your credentials to login."
+    },
+    "register": {
+      "title": "Register",
+      "description": "Create a new account."
+    }
+  },
   "not_found": {
     "title": "Page not found",
     "description": "The page you are looking for does not exist."
@@ -28,6 +52,11 @@ declare const messages: {
     "description": "We are sorry, but something went wrong.",
     "message": "Something went wrong. Please try again later.",
     "reset": "Reset"
+  },
+  "placeholder": {
+    "search": "Search courses, resources, etc.",
+    "title": "Search",
+    "description": "Find courses, resources, and more."
   },
   "navigation": {
     "class": {

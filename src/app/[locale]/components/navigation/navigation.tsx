@@ -4,11 +4,15 @@ import Logo from "./logo";
 import Items from "./items";
 import SearchInput from "../ui/search-input/search-input";
 import { suggestions } from "../ui/search-input/constant";
-import LocaleSwitcher from "@/app/components/locale-switcher";
+import LocaleSwitcher from "@/app/[locale]/components/ui/button/locale-switcher";
 import Phone from "../ui/button/phone";
 import PrimaryButton from "../ui/button/primary-button";
+import { useTranslations } from "next-intl";
 
 export default function Navigation() {
+  const t = useTranslations("authentication");
+  const p = useTranslations("placeholder");
+
   const handleSearch = (query: string) => {
     console.log("Searching for:", query);
   };
@@ -37,8 +41,8 @@ export default function Navigation() {
       <Logo className="w-[100px] h-[27px]" />
       <SearchInput
         className="w-full"
-        placeholder="Search courses, skills, or programs..."
-        suggestLabel="Popular Searches"
+        placeholder={p("search")}
+        suggestLabel={p("title")}
         suggestions={suggestions}
         showSuggestions={true}
         onSearch={handleSearch}
@@ -48,7 +52,7 @@ export default function Navigation() {
       <Items />
       <LocaleSwitcher />
       <Phone number={16910} />
-      <PrimaryButton>Login</PrimaryButton>
+      <PrimaryButton>{t("login.title")}</PrimaryButton>
     </nav>
   );
 }

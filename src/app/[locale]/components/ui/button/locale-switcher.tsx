@@ -19,7 +19,7 @@ export default function LocaleSwitcher() {
   return (
     <button
       onClick={handleToggle}
-      className="flex items-center gap-1 px-2 py-1 border rounded border-gray-200 hover:bg-slate-50 focus:outline-none"
+      className="flex items-center gap-1 px-1 py-0.5 cursor-pointer border rounded border-gray-200 hover:bg-slate-50 focus:outline-none"
     >
       <svg
         className="shrink-0"
