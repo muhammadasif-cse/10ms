@@ -4,6 +4,7 @@ import React from "react";
 const Banner = () => {
   return (
     <Image
+      draggable="false"
       alt="banner image"
       decoding="async"
       className="hidden w-auto sm:block"

@@ -10,7 +10,7 @@ export default function Items() {
 
   return (
     <div className="hidden xl:block">
-      <div className="ml-10 flex items-baseline space-x-4">
+      <div className="ml-10 flex items-baseline text-sm space-x-4">
         {menus.map((item, index) => (
           <div
             key={index}
