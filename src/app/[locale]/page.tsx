@@ -2,6 +2,7 @@ import Hero from "./components/sections/hero/hero";
 import { TProduct } from "../types/product";
 import { fetchAPI } from "@/lib/fetch-api";
 import { Locale } from "next-intl";
+import Main from "./components/sections/main/main";
 
 type Props = {
   params: Promise<{ locale: Locale }>;
@@ -16,6 +17,7 @@ export default async function IndexPage({ params }: Props) {
   return (
     <div>
       <Hero data={products} />
+      <Main data={products} />
     </div>
   );
 }
