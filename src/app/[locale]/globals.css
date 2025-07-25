@@ -64,3 +64,28 @@
   background-size: cover;
   background-position: center;
 }
+.card .card-price {
+  display: inline-flex;
+  align-items: center;
+  height: 28px;
+  background: #f97b53;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 0 14px 0 22px;
+  position: relative;
+  border-radius: 4px;
+  margin-left: 10px;
+  clip-path: polygon(12% 0, 100% 0, 100% 100%, 12% 100%, 0 50%);
+}
+.card .card-price::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 9999px;
+}

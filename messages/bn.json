@@ -1,4 +1,18 @@
 {
+  "products": {
+    "price": "১০০০",
+    "discounted_price": "২০০ ৳ ছাড়",
+    "original_price": "১২০০",
+    "features": {
+      "feature_1": "মোট ভর্তি: ৩২৯৯৫",
+      "feature_2": "প্রয়োজনীয় সময়: ৫০ ঘণ্টা",
+      "feature_3": "৫৪টি ভিডিও",
+      "feature_4": "১০টি রিডিং ও ১০টি লিসেনিং মকটেস্ট",
+      "feature_5": "৩৮টি লেকচার শিট",
+      "feature_6": "২৫টি ভিডিও লেকচার",
+      "feature_7": "১টি ফ্রি হার্ডকপি বই ডেলিভারি"
+    }
+  },
   "authentication": {
     "login": {
       "title": "লগইন",

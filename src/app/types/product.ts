@@ -1,7 +1,8 @@
 export interface TMedium {
-  id: number;
-  url: string;
-  type: string;
+  name: string;
+  resource_type: string;
+  resource_value: string;
+  thumbnail_url: string;
 }
 
 export interface TChecklist {
@@ -16,8 +17,8 @@ export interface TSeo {
 }
 
 export interface TCtaText {
-  text: string;
-  url: string;
+  name: string;
+  value: string;
 }
 
 export interface TSection {
