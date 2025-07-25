@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export interface TMedium {
   name: string;
   resource_type: string;
@@ -24,20 +25,22 @@ export interface TCtaText {
 }
 
 export interface TSection {
-  id: number;
-  title: string;
   type: string;
-  description?: string;
-  pointers?: string[];
-  instructors?: TInstructor[];
+  name: string;
+  description: string;
+  bg_color: string;
+  order_idx: number;
+  values: any[];
 }
 
-export interface TInstructor {
-  id: number;
+export type TInstructor = {
   name: string;
-  title: string;
-  photo: string;
-}
+  description: string;
+  has_instructor_page: boolean;
+  image: string;
+  short_description: string;
+  slug: string;
+};
 
 export interface TProduct {
   slug: string;
