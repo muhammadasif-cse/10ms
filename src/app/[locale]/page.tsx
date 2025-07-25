@@ -4,6 +4,7 @@ import { Locale } from "next-intl";
 import Hero from "./components/hero";
 import Instructor from "./components/sections/instructor";
 import Feature from "./components/sections/features";
+import Pointers from "./components/sections/pointers";
 
 type Props = {
   params: Promise<{ locale: Locale }>;
@@ -35,6 +36,18 @@ export default async function IndexPage({ params }: Props) {
             if (section.type === "features") {
               return (
                 <Feature
+                  key={section.name}
+                  title={section.name}
+                  data={section.values}
+                />
+              );
+            }
+            return null;
+          })}
+          {products.sections.map((section) => {
+            if (section.type === "pointers") {
+              return (
+                <Pointers
                   key={section.name}
                   title={section.name}
                   data={section.values}

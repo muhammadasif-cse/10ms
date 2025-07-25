@@ -39,6 +39,12 @@ export interface TSection {
   values: any[];
 }
 
+export type TPointer = {
+  id: string;
+  text: string;
+  color: string;
+};
+
 export type TInstructor = {
   name: string;
   description: string;
