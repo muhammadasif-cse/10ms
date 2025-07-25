@@ -2,11 +2,7 @@
 
 This is a **React/Next.js**, **TypeScript**, and **TailwindCSS** project built as part of a job assessment for the **Frontend Engineer (Level 1)** position at [10 Minute School](https://10minuteschool.com). The task is to recreate the landing page for the **IELTS Course by Munzereen Shahid** using data from their public API.
 
-## 🔗 Live Preview
-
-> Coming soon (You can deploy with [Vercel](https://vercel.com))
-
----
+## 🔗 Live Preview [10ms-ten](https://10ms-ten.vercel.app)
 
 ## 🚀 Features
 
