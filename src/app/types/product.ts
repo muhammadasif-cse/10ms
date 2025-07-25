@@ -32,6 +32,11 @@ export type TFeatureExplanation = {
   video_thumbnail?: string;
 };
 
+export type TAbout = {
+  id: string;
+  title: string;
+  description: string;
+};
 export type TFeature = {
   id: string;
   icon: string;
