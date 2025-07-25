@@ -2,6 +2,16 @@
 // See: https://next-intl.dev/docs/workflows/typescript#messages-arguments
 
 declare const messages: {
+  "authentication": {
+    "login": {
+      "title": "Login",
+      "description": "Please enter your credentials to login."
+    },
+    "register": {
+      "title": "Register",
+      "description": "Create a new account."
+    }
+  },
   "not_found": {
     "title": "Page not found",
     "description": "The page you are looking for does not exist."
@@ -28,6 +38,11 @@ declare const messages: {
     "description": "We are sorry, but something went wrong.",
     "message": "Something went wrong. Please try again later.",
     "reset": "Reset"
+  },
+  "placeholder": {
+    "search": "Search courses, resources, etc.",
+    "title": "Search",
+    "description": "Find courses, resources, and more."
   },
   "navigation": {
     "class": {
