@@ -5,6 +5,7 @@ import Hero from "./components/hero";
 import Instructor from "./components/sections/instructor";
 import Feature from "./components/sections/features";
 import Pointers from "./components/sections/pointers";
+import FeatureExplanations from "./components/sections/feature-explanations";
 
 type Props = {
   params: Promise<{ locale: Locale }>;
@@ -15,6 +16,7 @@ export default async function IndexPage({ params }: Props) {
   if (!products || Object.keys(products).length === 0) {
     return <div className="text-center p-4">No products available</div>;
   }
+  
   return (
     <div>
       <Hero data={products} />
@@ -48,6 +50,18 @@ export default async function IndexPage({ params }: Props) {
             if (section.type === "pointers") {
               return (
                 <Pointers
+                  key={section.name}
+                  title={section.name}
+                  data={section.values}
+                />
+              );
+            }
+            return null;
+          })}
+          {products.sections.map((section) => {
+            if (section.type === "feature_explanations") {
+              return (
+                <FeatureExplanations
                   key={section.name}
                   title={section.name}
                   data={section.values}
