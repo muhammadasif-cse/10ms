@@ -24,6 +24,12 @@ export interface TCtaText {
   value: string;
 }
 
+export type TFeature = {
+  id: string;
+  icon: string;
+  title: string;
+  subtitle: string;
+};
 export interface TSection {
   type: string;
   name: string;
@@ -32,6 +38,12 @@ export interface TSection {
   order_idx: number;
   values: any[];
 }
+
+export type TPointer = {
+  id: string;
+  text: string;
+  color: string;
+};
 
 export type TInstructor = {
   name: string;
