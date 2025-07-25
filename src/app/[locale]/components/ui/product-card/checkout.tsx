@@ -8,15 +8,15 @@ const Checkout = ({ data }: { data: string }) => {
     <div className="flex flex-col w-full py-6">
       <div className="flex items-center justify-between md:flex-col md:items-start">
         <div className="md:mb-4">
-          <div className="inline-block text-2xl font-semibold">
+          <div className="inline-block text-2xl font-semibold text-gray-800">
             {t("price")}
           </div>
-          <span className="infline-flex">
-            <del className="ml-2 text-base font-normal md:text-xl">
+          <span className="inline-flex">
+            <del className="ml-2 text-base font-normal md:text-xl text-gray-800">
               {t("original_price")}
             </del>
             <div className="card inline-block">
-              <p className="card-price">{t("discounted_price")}</p>
+              <p className="card-price text-gray-800">{t("discounted_price")}</p>
             </div>
           </span>
         </div>

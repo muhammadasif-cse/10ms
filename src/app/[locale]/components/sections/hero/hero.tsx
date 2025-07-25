@@ -9,7 +9,7 @@ const Hero = ({ data }: { data: TProduct }) => {
     <div>
       <Banner />
       <div className="hero-background relative w-full">
-        <section className="container relative pt-6 md:pt-10">
+        <section className="container relative">
           <section className="container mx-auto relative">
             <section className="flex flex-col gap-4 md:flex-row md:gap-12 pb-6 md:py-10 min-h-[300px]">
               <div className="order-1 md:max-w-[calc(100%_-_348px)] lg:max-w-[calc(100%_-_448px)] flex flex-col justify-center flex-1 md:order-1 space-y-2">
@@ -37,7 +37,7 @@ const Hero = ({ data }: { data: TProduct }) => {
                   dangerouslySetInnerHTML={{ __html: data.description }}
                 />
               </div>
-              <div className="bg-white max-w-[400px] absolute right-0 top-0 z-10">
+              <div className="bg-white max-w-[400px] absolute right-0 top-14 z-10">
                 <ProductCard data={data} />
               </div>
             </section>

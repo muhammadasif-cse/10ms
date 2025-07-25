@@ -60,7 +60,7 @@
 
 /* background */
 .hero-background {
-  background-image: url("https://cdn.10minuteschool.com/images/ui_%281%29_1716445506383.jpeg");
+  background-image: url("/background.jpeg");
   background-size: cover;
   background-position: center;
 }
