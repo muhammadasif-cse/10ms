@@ -2,14 +2,13 @@ import { MetadataRoute } from "next";
 import { Locale } from "next-intl";
 import { routing } from "@/i18n/routing";
 import { getPathname } from "@/i18n/navigation";
-import { host } from "../../config";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [...getEntries("/"), ...getEntries("/pathnames")];
 }
 
 type Href = Parameters<typeof getPathname>[0]["href"];
-
+const host = `${process.env.BASE_URL}`;
 function getEntries(href: Href) {
   return routing.locales.map((locale) => ({
     url: getUrl(href, locale),
