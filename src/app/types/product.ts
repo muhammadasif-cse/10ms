@@ -1,3 +1,5 @@
+import { ISeoMetaData } from "./seo";
+
 /* eslint-disable @typescript-eslint/no-explicit-any */
 export interface TMedium {
   name: string;
@@ -12,12 +14,6 @@ export type TChecklist = {
   list_page_visibility: boolean;
   text: string;
 };
-
-export interface TSeo {
-  title: string;
-  description: string;
-  image: string;
-}
 
 export interface TCtaText {
   name: string;
@@ -74,7 +70,7 @@ export interface TProduct {
   description: string;
   media: TMedium[];
   checklist: TChecklist[];
-  seo: TSeo;
+  seo: ISeoMetaData;
   cta_text: TCtaText;
   sections: TSection[];
 }
