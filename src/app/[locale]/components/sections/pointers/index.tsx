@@ -10,18 +10,18 @@ type Props = {
 const Pointers = ({ title, data }: Props) => {
   return (
     <section className="pt-6 bg-white">
-      <div className="max-w-5xl mx-auto px-4">
-        <h2 className="text-xl md:text-2xl font-semibold mb-6">{title}</h2>
+      <h2 className="text-xl md:text-2xl font-semibold mb-4">{title}</h2>
 
-        <ul className="space-y-4">
+      <div className="pt-2 md:p-6 border border-gray-200 rounded-md">
+        <ul className="grid grid-cols-1 gap-2 md:grid-cols-[1fr_1fr] md:gap-4">
           {data.map((item) => (
-            <li key={item.id} className="flex items-start gap-3">
+            <li key={item.id} className="flex items-start gap-2 mb-2">
               <CheckCircle2
                 className="mt-1 text-green-600 min-w-[20px]"
                 size={20}
                 strokeWidth={2}
               />
-              <p className="text-sm text-gray-700 leading-relaxed">
+              <p className="flex-1 text-secondary leading-relaxed">
                 {item.text}
               </p>
             </li>
