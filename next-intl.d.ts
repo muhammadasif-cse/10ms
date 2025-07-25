@@ -6,6 +6,7 @@ declare module "next-intl" {
 
   export function useLocale(): string;
   export function useTranslations<T extends string = string>(namespace?: T): {
+    [x: string]: any;
     (key: string, ...args: any[]): string;
   };
 }
