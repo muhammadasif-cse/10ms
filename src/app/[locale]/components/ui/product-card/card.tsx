@@ -201,7 +201,7 @@ const ProductCard = ({
       </Carousel>
       <div>
         <Checkout data={data.cta_text.name ?? ""} />
-        <CourseFeature />
+        <CourseFeature checklist={data.checklist} />
       </div>
     </div>
   );

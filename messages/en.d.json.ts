@@ -5,16 +5,7 @@ declare const messages: {
   "products": {
     "price": "1000",
     "discounted_price": "200 $ off",
-    "original_price": "1200",
-    "features": {
-      "feature_1": "Total Enrolled: 32995",
-      "feature_2": "Time Required: 50 hours",
-      "feature_3": "54 Videos",
-      "feature_4": "10 Reading & 10 Listening Mocktests",
-      "feature_5": "38 Lecture Sheets",
-      "feature_6": "25 Video Lectures",
-      "feature_7": "1 Free Hardcopy Book Delivered"
-    }
+    "original_price": "1200"
   },
   "authentication": {
     "login": {

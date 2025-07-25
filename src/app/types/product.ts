@@ -4,11 +4,13 @@ export interface TMedium {
   resource_value: string;
   thumbnail_url: string;
 }
-
-export interface TChecklist {
-  id: number;
+export type TChecklist = {
+  color: string;
+  icon: string;
+  id: string;
+  list_page_visibility: boolean;
   text: string;
-}
+};
 
 export interface TSeo {
   title: string;
