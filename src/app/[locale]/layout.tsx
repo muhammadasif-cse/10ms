@@ -45,7 +45,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     <html className="h-full" lang={locale}>
       <body className={`flex h-full flex-col ${inter.className}`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <Navigation />
+          <Navigation locale={locale} />
           {children}
         </NextIntlClientProvider>
       </body>

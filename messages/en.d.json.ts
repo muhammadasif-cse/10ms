@@ -7,7 +7,8 @@ declare const messages: {
     "description": "The page you are looking for does not exist."
   },
   "locale_switcher": {
-    "label": "Switch Language"
+    "label": "English",
+    "locale": "en"
   },
   "meta_data": {
     "name": "10ms"
