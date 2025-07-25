@@ -1,1 +1,67 @@
 @import "tailwindcss";
+
+@theme {
+  /* breakpoints/screens */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1440px;
+
+  /* container configuration */
+  --container-center: true;
+  --container-padding-xs: 0.3rem;
+  --container-padding-sm: 0.5rem;
+  --container-padding-md: 1rem;
+  --container-padding-lg: 2.5rem;
+  --container-padding-xl: 2rem;
+  --container-padding-2xl: 3rem;
+
+  /* colors */
+  --color-primary: #1cab55;
+  --color-secondary: #4b5563;
+}
+
+/* container responsive padding */
+@layer components {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--container-padding-xs);
+    padding-right: var(--container-padding-xs);
+
+    @media (min-width: theme(--breakpoint-sm)) {
+      padding-left: var(--container-padding-sm);
+      padding-right: var(--container-padding-sm);
+    }
+
+    @media (min-width: theme(--breakpoint-md)) {
+      padding-left: var(--container-padding-md);
+      padding-right: var(--container-padding-md);
+    }
+
+    @media (min-width: theme(--breakpoint-lg)) {
+      padding-left: var(--container-padding-lg);
+      padding-right: var(--container-padding-lg);
+    }
+
+    @media (min-width: theme(--breakpoint-xl)) {
+      padding-left: var(--container-padding-xl);
+      padding-right: var(--container-padding-xl);
+    }
+
+    @media (min-width: theme(--breakpoint-2xl)) {
+      padding-left: var(--container-padding-2xl);
+      padding-right: var(--container-padding-2xl);
+    }
+  }
+}
+
+/* background */
+.hero-background {
+  background-image: url("https://cdn.10minuteschool.com/images/ui_%281%29_1716445506383.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
