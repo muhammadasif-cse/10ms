@@ -33,7 +33,7 @@ export default function Items() {
             </Link>
             {item.submenu && (
               <div
-                className={`absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow border border-gray-200 transition-all duration-300 transform ${
+                className={`absolute z-50 top-full left-0 mt-2 w-56 bg-white rounded-lg shadow border border-gray-200 transition-all duration-300 transform ${
                   activeMenu === index
                     ? "opacity-100 translate-y-0 visible"
                     : "opacity-0 -translate-y-2 invisible"

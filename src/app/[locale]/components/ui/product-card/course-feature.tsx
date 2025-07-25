@@ -25,7 +25,7 @@ const CourseFeature = () => {
   const t = useTranslations("products.features");
   return (
     <div>
-      <h3 className="font-semibold text-gray-900 mb-4">এই কোর্সে যা থাকছে</h3>
+      <h3 className="mb-4 text-xl font-semibold text-gray-800">এই কোর্সে যা থাকছে</h3>
       <div className="space-y-3 font-medium">
         {featureKeys.map((key, idx) => {
           const Icon = icons[idx];
