@@ -3,6 +3,7 @@ import { fetchAPI } from "@/lib/fetch-api";
 import { Locale } from "next-intl";
 import Hero from "./components/hero";
 import Instructor from "./components/sections/instructor";
+import Feature from "./components/sections/features";
 
 type Props = {
   params: Promise<{ locale: Locale }>;
@@ -13,24 +14,35 @@ export default async function IndexPage({ params }: Props) {
   if (!products || Object.keys(products).length === 0) {
     return <div className="text-center p-4">No products available</div>;
   }
-  if (!products.sections || products.sections.length === 0) {
-    return <div className="text-center p-4">No sections available</div>;
-  }
-  const instructorSection = products.sections.find(
-    (section) => section.type === "instructors"
-  );
-
-  if (!instructorSection || !instructorSection.values?.length) return null;
-
   return (
     <div>
       <Hero data={products} />
       <div className="flex-1 w-full mx-auto container">
-        <div className=" md:max-w-[calc(100%_-_348px)] lg:max-w-[calc(100%_-_448px)]">
-          <Instructor
-            title={instructorSection.name || ""}
-            data={instructorSection.values}
-          />
+        <div className="space-y-2 w-full md:w-[calc(100%-348px)] lg:w-[calc(100%-448px)] max-w-full">
+          {products.sections.map((section) => {
+            if (section.type === "instructors") {
+              return (
+                <Instructor
+                  key={section.name}
+                  title={section.name}
+                  data={section.values}
+                />
+              );
+            }
+            return null;
+          })}
+          {products.sections.map((section) => {
+            if (section.type === "features") {
+              return (
+                <Feature
+                  key={section.name}
+                  title={section.name}
+                  data={section.values}
+                />
+              );
+            }
+            return null;
+          })}
         </div>
       </div>
     </div>
@@ -43,7 +55,6 @@ async function getProducts(locale: Locale): Promise<TProduct> {
       `${process.env.BASE_URL}/products/ielts-course?lang=${locale}`
     );
     if (data.code === 200) {
-      console.log("data.data", data.data);
       return data.data as TProduct;
     }
     return {} as TProduct;
