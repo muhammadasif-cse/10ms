@@ -4,7 +4,7 @@ import Logo from "./logo";
 import Items from "./items";
 import SearchInput from "../ui/search-input/search-input";
 import { suggestions } from "../ui/search-input/constant";
-import LocaleSwitcher from "@/app/components/locale-switcher";
+import LocaleSwitcher from "@/app/[locale]/components/ui/button/locale-switcher";
 import Phone from "../ui/button/phone";
 import PrimaryButton from "../ui/button/primary-button";
 
