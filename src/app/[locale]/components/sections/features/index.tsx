@@ -12,7 +12,7 @@ const Feature = ({ title, data }: Props) => {
     <section className="pt-6 bg-white">
       <h2 className="my-4 text-xl font-semibold md:text-2xl">{title}</h2>
 
-      <article className="mb-16 grid grid-cols-1 gap-4 rounded-md border bg-[#111827] p-6 md:grid-cols-2 md:gap-8">
+      <article className="grid grid-cols-1 gap-4 rounded-md border bg-[#111827] p-6 md:grid-cols-2 md:gap-8">
         {data.map((item) => (
           <div key={item.id} className="flex flex-row items-start gap-3 m-1">
             <div className="mb-4 mx-auto shrink-0">
