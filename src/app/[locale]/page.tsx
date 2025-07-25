@@ -1,7 +1,7 @@
-import Hero from "./components/hero/hero";
 import { TProduct } from "../types/product";
 import { fetchAPI } from "@/lib/fetch-api";
 import { Locale } from "next-intl";
+import Hero from "./components/hero";
 import Instructor from "./components/sections/instructor";
 
 type Props = {

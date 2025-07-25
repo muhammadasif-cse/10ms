@@ -184,7 +184,7 @@ const ProductCard = ({
                 {item.resource_type === "video" && (
                   <span className="absolute inset-0 flex items-center justify-center rounded-md">
                     <Image
-                      alt="Play The Video"
+                      alt="video"
                       fetchPriority="high"
                       width="20"
                       height="20"
