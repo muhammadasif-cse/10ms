@@ -1,23 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-
-type Instructor = {
-  name: string;
-  slug: string;
-  image: string;
-  has_instructor_page: boolean;
-  description: string;
-};
+import { TInstructor } from "@/app/types/product";
 
 type Props = {
   title: string;
-  data: Instructor[];
+  data: TInstructor[];
 };
 
-const InstructorCard = ({ title, data }: Props) => {
-  if (!data || data.length === 0) return null;
-
+const Instructor = ({ title, data }: Props) => {
   return (
     <div id="instructors" className="mb-7 xs:bg-[#EEF2F4] xs:pt-2">
       <div className="pt-4 pb-2 bg-white">
@@ -83,4 +74,4 @@ const InstructorCard = ({ title, data }: Props) => {
   );
 };
 
-export default InstructorCard;
+export default Instructor;
