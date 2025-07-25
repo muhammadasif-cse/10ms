@@ -6,7 +6,7 @@ import Instructor from "./components/sections/instructor";
 import Feature from "./components/sections/features";
 import Pointers from "./components/sections/pointers";
 import FeatureExplanations from "./components/sections/feature-explanations";
-import About from "./components/sections/about/page";
+import About from "./components/sections/about";
 
 type Props = {
   params: Promise<{ locale: Locale }>;
