@@ -11,7 +11,12 @@ declare const messages: {
     "bn": "BN"
   },
   "meta_data": {
-    "name": "10ms"
+    "title": "10 Minute School - Online Education Platform",
+    "description": "10 Minute School - Online Education Platform is an online education platform providing courses and resources for various classes.",
+    "keywords": "online education, courses, English learning, Bengali learning, freelancing, design, career preparation",
+    "author": "10 Minute School - Online Education Platform Team",
+    "robots": "index, follow",
+    "og_title": "10 Minute School - Online Education Platform"
   },
   "home": {
     "title": "Hello world!",

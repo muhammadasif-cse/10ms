@@ -26,9 +26,14 @@ export function generateStaticParams() {
 
 export async function generateMetadata(props: Omit<Props, "children">) {
   const { locale } = await props.params;
-  const t = await getTranslations({ locale, namespace: "home" });
+  const t = await getTranslations({ locale, namespace: "meta_data" });
   return {
     title: t("title"),
+    description: t("description"),
+    keywords: t("keywords"),
+    author: t("author"),
+    robots: t("robots"),
+    og_title: t("og_title"),
   };
 }
 

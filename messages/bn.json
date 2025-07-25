@@ -8,7 +8,12 @@
     "bn": "BN"
   },
   "meta_data": {
-    "name": "10ms"
+    "title": "10 Minute School - অনলাইন শিক্ষা প্ল্যাটফর্ম",
+    "description": "10 Minute School একটি অনলাইন শিক্ষা প্ল্যাটফর্ম যা বিভিন্ন শ্রেণির জন্য কোর্স এবং সম্পদ সরবরাহ করে।",
+    "keywords": "অনলাইন শিক্ষা, কোর্স, বাংলা শিক্ষা, ইংরেজি শিক্ষা, ফ্রিল্যান্সিং, ডিজাইন, ক্যারিয়ার প্রস্তুতি",
+    "author": "10 Minute School Team",
+    "robots": "index, follow",
+    "og_title": "10 Minute School - অনলাইন শিক্ষা প্ল্যাটফর্ম"
   },
   "home": {
     "title": "স্বাগতম!",
