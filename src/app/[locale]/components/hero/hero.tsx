@@ -2,7 +2,7 @@ import React from "react";
 import Banner from "./banner";
 import Image from "next/image";
 import { TProduct } from "@/app/types/product";
-import ProductCard from "../../ui/product-card/card";
+import ProductCard from "../ui/product-card/card";
 
 const Hero = ({ data }: { data: TProduct }) => {
   return (

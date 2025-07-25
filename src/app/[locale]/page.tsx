@@ -1,4 +1,4 @@
-import Hero from "./components/sections/hero/hero";
+import Hero from "./components/hero/hero";
 import { TProduct } from "../types/product";
 import { fetchAPI } from "@/lib/fetch-api";
 import { Locale } from "next-intl";

@@ -16,8 +16,6 @@ type Props = {
 };
 
 const InstructorCard = ({ title, data }: Props) => {
-  if (!data || data.length === 0) return null;
-
   return (
     <div id="instructors" className="mb-7 xs:bg-[#EEF2F4] xs:pt-2">
       <div className="pt-4 pb-2 bg-white">
