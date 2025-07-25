@@ -23,6 +23,14 @@ export interface TCtaText {
   name: string;
   value: string;
 }
+export type TFeatureExplanation = {
+  id: string;
+  title: string;
+  checklist: string[];
+  file_type: "image" | "video";
+  file_url: string;
+  video_thumbnail?: string;
+};
 
 export type TFeature = {
   id: string;
