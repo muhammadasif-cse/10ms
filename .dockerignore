@@ -1,8 +1,5 @@
 node_modules
 .next
-Dockerfile
-.dockerignore
 .git
-.gitignore
-*.log
+.DS_Store
 .env
