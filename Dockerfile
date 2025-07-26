@@ -1,12 +1,10 @@
 # build the application
 FROM node:18-alpine AS builder
 
-# install dependencies
 RUN apk add --no-cache libc6-compat openssl
 
 WORKDIR /app
 
-# copy package files
 COPY package.json yarn.lock* package-lock.json* pnpm-lock.yaml* ./
 
 # install dependencies based on the preferred package manager
@@ -20,7 +18,6 @@ RUN \
 # copy the rest of the files
 COPY . .
 
-# build the application
 RUN npm run build
 
 # production image
@@ -36,7 +33,7 @@ COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 COPY --from=builder --chown=nextjs:nodejs /app/public ./public
 
-# environment variables (override these in docker-compose or runtime)
+# environment variables
 ENV NODE_ENV production
 ENV PORT 3000
 ENV HOSTNAME 0.0.0.0
