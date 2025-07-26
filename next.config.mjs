@@ -1,4 +1,3 @@
-import { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
 
 const env = process.env;
@@ -10,7 +9,7 @@ const withNextIntl = createNextIntlPlugin({
   },
 });
 
-const config: NextConfig = {
+const config = {
   output: "standalone",
   env: {
     BASE_URL: `${BASE_URL}/${env.COMMON_PREFIX}`,
