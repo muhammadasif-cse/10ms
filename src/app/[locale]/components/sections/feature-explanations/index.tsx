@@ -13,7 +13,7 @@ const FeatureExplanations = ({ title, data }: Props) => {
       <div>
         <h2 className="text-xl md:text-2xl font-semibold mb-4">{title}</h2>
 
-        <div className="flex flex-col border divide-y-2 divide-gray-200 border-gray-200 rounded-md p-6">
+        <div className="flex flex-col border divide-y-2 divide-gray-200 border-gray-200 rounded-md md:p-6 p-2">
           {data.map((item) => (
             <div
               key={item.id}

@@ -16,7 +16,7 @@ const Instructor = ({ title, data }: Props) => {
       {data.map((item, index) => (
         <div
           key={index}
-          className="flex items-center px-5 md:rounded-md md:border border-gray-200"
+          className="flex items-center md:px-5 md:rounded-md md:border border-gray-200"
         >
           <div className="rounded-[50%] overflow-hidden transition-opacity duration-300 ease-in-out opacity-100">
             <Image

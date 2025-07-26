@@ -13,7 +13,7 @@ const About = ({ title, data }: Props) => {
     <section className="pt-6 bg-white">
       <div>
         <h2 className="text-xl md:text-2xl font-semibold mb-4">{title}</h2>
-        <div className="rounded-lg md:border border-gray-200 md:px-4 py-2">
+        <div className="rounded-lg md:border border-gray-200 md:px-4 p-2">
           {data.map((item) => (
             <details
               key={item.id}

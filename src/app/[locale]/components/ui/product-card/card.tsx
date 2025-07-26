@@ -74,7 +74,7 @@ const ProductCard = ({
   const prev_disabled = filteredMedia.length === 0 || current === 0;
 
   return (
-    <div className={`bg-white p-2 border border-gray-300 ${className}`}>
+    <div className={`${className}`}>
       <Carousel setApi={setApi} className="w-full">
         <CarouselContent>
           {filteredMedia.map((item: TMedium, index) => (

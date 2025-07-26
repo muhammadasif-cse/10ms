@@ -12,10 +12,10 @@
   --container-center: true;
   --container-padding-xs: 0.3rem;
   --container-padding-sm: 0.5rem;
-  --container-padding-md: 1rem;
-  --container-padding-lg: 2.5rem;
-  --container-padding-xl: 2rem;
-  --container-padding-2xl: 3rem;
+  --container-padding-md: 0.7rem;
+  --container-padding-lg: 1rem;
+  --container-padding-xl: 1.5rem;
+  --container-padding-2xl: 2rem;
 
   /* colors */
   --color-primary: #1cab55;
