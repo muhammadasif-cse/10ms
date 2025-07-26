@@ -1,0 +1,15 @@
+services:
+  10ms:
+    build: .
+    ports:
+      - "3000:3000"
+    restart: always
+    networks:
+      - 10ms
+
+networks:
+  10ms:
+    name: 10ms
+    ipam:
+      config:
+        - subnet: 192.168.100.0/26
